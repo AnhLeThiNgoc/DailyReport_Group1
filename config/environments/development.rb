@@ -36,7 +36,7 @@ DailyReportGroup1::Application.configure do
   # these options are only needed if you choose smtp delivery
   config.action_mailer.smtp_settings = {
   :address        => 'smtp.gmail.com',
-  :port           => 25,
+  :port           => 587,
   :domain         => 'www.gmail.com',
   :authentication => :login,
   :user_name      => 'anhltn217@gmail.com',

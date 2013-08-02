@@ -12,6 +12,8 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
 end
 
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
 
 group :development do
   gem 'annotate', '2.5.0'
@@ -29,4 +31,5 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails'
 end

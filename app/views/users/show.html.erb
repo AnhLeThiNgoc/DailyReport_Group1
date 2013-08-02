@@ -9,3 +9,21 @@
     </section>
   </aside>
 </div>
+
+<%= select_date Date.today, prefix: :start_date %>
+<p>
+  <select id="start_date_year" name="start_date[year]"> Year </select>
+<select id="start_date_month" name="start_date[month]"> Month </select>
+<select id="start_date_day" name="start_date[day]"> Day </select>
+
+</p>
+
+<div class = "span8">
+  <% if @user.reports.any? %>
+    <h3>Reports (<%= @user.reports.count %>)</h3>
+    <ol class = "reports">
+      <%= redirect_to '/reports/report' %>
+    </ol>
+  <% end %>
+</div>
+
